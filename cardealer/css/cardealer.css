@@ -2,25 +2,34 @@
   from{width:0;height:0;}
   to{width:100%;height:80vh;}
 }
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mukta&display=swap');
 :root {
+ 
         /* Put variables here */
-
+        --main-color: #14213d;
+        --accent-1: #000000;
+        --accent-2: #fca311;
+        --accent-3: #e5e5e5;
+        --accent-4: #ffffff;
    }
    * {
        margin: 0;
        padding: 0;
        box-sizing: border-box;
+       font-family: 'Mukta', sans-serif;
    }
    body {
-       background: lightgray;
+       background: var(--main-color);
+       color:var(--accent-4);
    }
    header {
        padding: 1vh;
        text-align: right;
        font-size:1.5rem;
+      font-family: 'Anton', sans-serif;
    }
    nav {
-       background-color: black;
+       background-color: var(--accent-1);
        color: white;
    }
    nav ul {
@@ -36,20 +45,23 @@
      font-size: 1.25rem;
      text-decoration: none;
      transition: padding .5s ease;
+      font-family: 'Anton', sans-serif;
    }
    nav li a:hover {
-     background-color: lemonchiffon;
+     background-color: #e5e5e5;
      color: black;
      padding: 2.5vh 4vw;
    }
    footer {
-      background-color: black;
+      background-color: var(--accent-1);
       color: white;
       padding: 2vh;
       min-height: 10vh;
+      font-family: 'Anton', sans-serif;
+      
    }
    .container {
-      background: burlywood;
+      background: #e5e5e5;
       padding: 1vh;
       min-height: 60vh;
       width: 80%;
@@ -58,7 +70,7 @@
    .cover-photo {
      height: 80vh;
      margin: auto;
-     background: lightgrey;
+     background: var(--main-color);
      /* Image is 3200 x 1800 */
      background-image: url('../images/coverPhoto1.png');
      background-position: center;
@@ -93,14 +105,15 @@
      padding: 1.5rem;
      border-radius: 1rem;
      color: white;
-     background: darkred;
+     background: var(--accent-2);
      font-size: 1.5rem;
      text-align: center;
      text-decoration: none;
      transition: background-color .5s ease;
+      font-family: 'Anton', sans-serif;
    }
    .cta-button:hover {
-     background-color: rgba(139,0,0,.7);
+     background-color: darkorange;
    }
    .row {
      width: 100%;
@@ -111,7 +124,8 @@
      margin: 2vh 0;
    }
    .row-dark {
-     background-color: lightgray;
+     background-color: var(--accent-3);
+     color: var(--accent-1);
    }
    .row .media {
      flex-basis: 40%;
@@ -126,6 +140,7 @@
    }
    .text h2 {
      padding: 2vh;
+      font-family: 'Anton', sans-serif;
    }
    .text p {
      font-size: 1.25rem;
@@ -148,6 +163,9 @@
      font-size: 2rem;
      padding: 2vh;
      border-bottom: 1px solid black;
+     background-color: #e5e5e5;
+     color: black;
+     font-family: 'Anton', sans-serif;
    }
    .car-container {
      display: flex;
@@ -157,11 +175,12 @@
      justify-content: flex-start;
      width: 90%;
      margin: 2vh auto;
-}
+     background-color: #e5e5e5;
+   }
    .car-item {
      width: 30%;
      margin: 1rem;
-     background: lightgrey;
+     background: var(--accent-1);
      overflow: hidden;
      border-radius: 12px;
    }
