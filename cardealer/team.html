@@ -33,7 +33,7 @@
     
     <div class="grid-item">
       <div class="grid-image">
-        <img src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" alt="#">
+        <img onmouseover="replaceImage(0)" onmouseout="replaceImage(0)" src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" data-image2="https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg" alt="#">
       </div>
       <h3>Name of Person</h3>
       <h4>Person's Title</h4>
@@ -47,7 +47,7 @@
     
      <div class="grid-item">
       <div class="grid-image">
-        <img src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" alt="#">
+        <img onmouseover="replaceImage(1)" onmouseout="replaceImage(1)" src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" data-image2="https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg" alt="#">
       </div>
       <h3>Name of Person</h3>
       <h4>Person's Title</h4>
@@ -61,7 +61,7 @@
     
      <div class="grid-item">
       <div class="grid-image">
-        <img src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" alt="#">
+        <img onmouseover="replaceImage(2)" onmouseout="replaceImage(2)" src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" data-image2="https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg" alt="#">
       </div>
       <h3>Name of Person</h3>
       <h4>Person's Title</h4>
@@ -75,7 +75,7 @@
     
      <div class="grid-item">
       <div class="grid-image">
-        <img src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" alt="#">
+        <img onmouseover="replaceImage(3)" onmouseout="replaceImage(3)" src="https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg" data-image2="https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg" alt="#">
       </div>
       <h3>Name of Person</h3>
       <h4>Person's Title</h4>
@@ -159,6 +159,19 @@
    <footer>
         Made in FHS Web Design
    </footer>
+   
+   <script>
+     function replaceImage(num) {
+       var element = document.getElementsByTagName('img')[num];
+       var originalImage = element.getAttribute('src');
+       var newImage = element.getAttribute('data-image2');
+      
+      
+       element.setAttribute('src', newImage);
+       element.setAttribute('data-image2', originalImage);
+       //alert(newImage);
+     }
+   </script>
 
 
 
