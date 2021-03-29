@@ -124,8 +124,8 @@
      margin: 2vh 0;
    }
    .row-dark {
-     background-color: var(--accent-3);
-     color: var(--accent-1);
+     background-color: var(--accent-1);
+     color: var(--accent-4);
    }
    .row .media {
      flex-basis: 40%;
