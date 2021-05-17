@@ -68,7 +68,7 @@
      margin: auto;
      background: beige;
      /* Image is 3200 x 1800 */
-     background-image: url('images/coverPhoto2.png');
+     background-image: url('../images/coverPhoto2.png');
      background-position: center;
      background-size: cover;
      animation-name: grow;
