@@ -46,7 +46,7 @@
       font-family: 'Anton', sans-serif;
    }
    nav li a:hover {
-     background-color: #e5e5e5;
+     background-color: #ffb20f;
      color: black;
      padding: 2.5vh 4vw;
    }
@@ -143,10 +143,170 @@
      line-height: 1.75rem;
      padding: 2vh;
    }
-
+  /*Reviews page CSS*********************/
+   .reviews-container {
+     display: flex;
+     flex-flow: row wrap;
+     gap: 3vh 3vh;
+     width: 80%;
+     margin: auto;
+   }
+    .reviews-header {
+     font-size: 2rem;
+     padding: 2vh;
+     border-bottom: 1px solid black;
+     background-color: #ffb20f;
+     color: black;
+     font-family: 'Anton', sans-serif;
+   }
+   .grid-item {
+     flex: 0 0 45%;
+     padding: 2vh;
+     color: black;
+     display: grid;
+     grid-template-rows: 1fr 1fr 2fr;
+     grid-template-columns: 1fr 2fr;
+     grid-template-areas:
+     "pic name"
+     "pic title"
+     "pic bio";
+   }
+   .grid-image {
+     grid-area: pic;
+   }
+   .grid-image img {
+     display: block;
+     width: 90%;
+     margin: auto;
+   }
+   .grid-item h3 {
+     grid-area: name;
+     padding: 1vh;
+     font-size: 1.5rem;
+   }
+   .grid-item h4 {
+     grid-area: title;
+     padding: 1vh;
+     font-weight: normal;
+     border-bottom: 2px #ffb20f solid;
+     border-top: 2px #ffb20f solid;
+   }
+   .grid-item p {
+     grid-area: bio;
+     padding: 1vh;
+   }
+   /* Cakes Page*************************/
+   .cakes-header {
+     font-size: 2rem;
+     padding: 2vh;
+     border-bottom: 1px solid black;
+     background-color: #ffb20f;
+     color: black;
+     font-family: 'Anton', sans-serif;
+   }
+   .cakes-container {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     align-items: stretch;
+     justify-content: flex-start;
+     width: 90%;
+     margin: 2vh auto;
+     background-color: #ffe548;
+   }
+   .cakes-item {
+     width: 30%;
+     margin: 1rem;
+     background: #ffe548;
+     overflow: hidden;
+     border-radius: 12px;
+   }
+   .cakes-image {
+     position: relative;
+     width: 100%;
+     height: 30vh;
+   }
+   .cakes-image img {
+     display: block;
+     height: 100%;
+   }
+   .cakes-overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0, 0, 0, .6);
+     color: white;
+     text-align: center;
+     font-size: 1.25rem;
+     overflow: hidden;
+     width: 100%;
+     height: 0;
+     transition: .5s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .cakes-item:hover .cakes-overlay {
+     height: 100%;
+   }
+   .cakes-overlay p {
+     width: 90%;
+   }
+   .cakes-overlay .cta-button {
+     font-size: .75rem;
+     padding: .5rem;
+     width: 70%;
+   }
+   .cakes-text h4 {
+     font-size: 1.75rem;
+     padding: .5rem;
+   }
 		@media only screen and (max-width:800px) {
 			.container {
 				width: 100%;
 				margin: auto;
 			}
+			 /* General CSS */
+        header, footer {
+          text-align: center;
+        }
+        nav li a {
+          display: block;
+        }/* Reviews Page */
+        .reviews-container {
+          flex-flow: column wrap;
+        }
+        .grid-item {
+          text-align: center;
+          flex: 0 0 100%;
+          grid-template-rows: auto 45vh auto auto;
+          grid-template-columns: 100%;
+          grid-template-areas:
+          "name"
+          "pic"
+          "title"
+          "bio";
+        }
+        .grid-image {
+          padding: 2vh;
+        }
+        .grid-image img {
+          height: 100%;
+        }
+		}
+        /* Cakes page */
+        .cakes-container {
+          flex-direction: column;
+        }
+        .cakes-item {
+          width: 100%;
+          text-align: center;
+        }
+        .cakes-image img {
+          width: 100%;
+        }
+        .cakes-header {
+          text-align: center;
+        }
 		}
