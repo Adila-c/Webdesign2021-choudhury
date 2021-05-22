@@ -57,7 +57,7 @@
 			min-height: 10vh;
 		}
 		.container {
-			background-color: beige;
+			background-color: #ffb20f;
 			padding: 1vh;
 			min-height: 60vh;
 			width: 80%;
@@ -212,12 +212,13 @@
      justify-content: flex-start;
      width: 90%;
      margin: 2vh auto;
-     background-color: #ffe548;
+     background-color: ##ffb20f;
    }
    .cakes-item {
      width: 30%;
      margin: 1rem;
-     background: #ffe548;
+     background:  #582707;
+     color: white;
      overflow: hidden;
      border-radius: 12px;
    }
@@ -294,7 +295,7 @@
         .grid-image img {
           height: 100%;
         }
-		}
+	
         /* Cakes page */
         .cakes-container {
           flex-direction: column;
