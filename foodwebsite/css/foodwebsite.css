@@ -51,7 +51,7 @@
      padding: 2.5vh 4vw;
    }
 		footer {
-			background-color: black;
+			background-color: #582707;
 			color: white;
 			padding: 2vh;
 			min-height: 10vh;
@@ -263,6 +263,75 @@
      font-size: 1.75rem;
      padding: .5rem;
    }
+   /* Pastries Page*************************/
+   .pastries-header {
+     font-size: 2rem;
+     padding: 2vh;
+     border-bottom: 1px solid black;
+     background-color: #ffb20f;
+     color: black;
+     font-family: 'Anton', sans-serif;
+   }
+   .pastries-container {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     align-items: stretch;
+     justify-content: flex-start;
+     width: 90%;
+     margin: 2vh auto;
+     background-color: ##ffb20f;
+   }
+   .pastries-item {
+     width: 30%;
+     margin: 1rem;
+     background:  #582707;
+     color: white;
+     overflow: hidden;
+     border-radius: 12px;
+   }
+   .pastries-image {
+     position: relative;
+     width: 100%;
+     height: 30vh;
+   }
+   .pastries-image img {
+     display: block;
+     height: 100%;
+   }
+   .pastries-overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0, 0, 0, .6);
+     color: white;
+     text-align: center;
+     font-size: 1.25rem;
+     overflow: hidden;
+     width: 100%;
+     height: 0;
+     transition: .5s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .pastries-item:hover .pastries-overlay {
+     height: 100%;
+   }
+   .pastries-overlay p {
+     width: 90%;
+   }
+   .pastries-overlay .cta-button {
+     font-size: .75rem;
+     padding: .5rem;
+     width: 70%;
+   }
+   .pastries-text h4 {
+     font-size: 1.75rem;
+     padding: .5rem;
+   }
+   
 		@media only screen and (max-width:800px) {
 			.container {
 				width: 100%;
@@ -308,6 +377,20 @@
           width: 100%;
         }
         .cakes-header {
+          text-align: center;
+        }
+        /* Pastries page */
+        .pastzries-container {
+          flex-direction: column;
+        }
+        .pastries-item {
+          width: 100%;
+          text-align: center;
+        }
+        .pastries-image img {
+          width: 100%;
+        }
+        .pastries-header {
           text-align: center;
         }
 		}
