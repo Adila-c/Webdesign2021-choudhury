@@ -331,6 +331,18 @@
      font-size: 1.75rem;
      padding: .5rem;
    }
+   /* Contact Page*****************/
+   .contact-row {
+     width: 80%;
+     max-width: 1100px;
+     margin: 3vh auto;
+     color: white;
+   }
+   .contact-row .cta-button {
+     font-size: 1rem;
+     padding: 1rem;
+     max-width: 50%;
+   }
    
 		@media only screen and (max-width:800px) {
 			.container {
